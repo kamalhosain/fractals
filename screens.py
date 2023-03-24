@@ -1,6 +1,7 @@
 import pygame
 import button
 import mandelbrot
+import sierpinski
 
 pygame.init()
 
@@ -72,7 +73,7 @@ def screen2():
         if MANDELBROT_BUTTON.draw(SCREEN):
             mandelbrot.draw_mandelbrot(SCREEN, SCREEN_WIDTH, SCREEN_HEIGHT, 50)
         elif SIERPINSKI_BUTTON.draw(SCREEN):
-            print("Sierpinski was clicked")
+            sierpinski.main_sierpinski(SCREEN)
         elif KOCH_BUTTON.draw(SCREEN):
             print("Koch was clicked")
         elif JULIA_BUTTON.draw(SCREEN):
