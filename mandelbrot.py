@@ -25,6 +25,8 @@ def in_mandelbrot(complex_coord, max_iterations):
 # Draw the Mandelbrot fractal
 def draw_mandelbrot(screen, screen_width, screen_height, max_iterations):
 
+    x = 0
+    y = 0
     flag = True
     while flag:
 
@@ -54,4 +56,13 @@ def draw_mandelbrot(screen, screen_width, screen_height, max_iterations):
                 screen.set_at((x, y), color)
 
 
-        pygame.display.flip()
+                pygame.display.update((x, y, 1, 1))
+
+                #move to the next pixel
+                x += 1
+                if x >= screen_width:
+                    x = 0
+                    y += 1
+
+                if y >= screen_height:
+                    flag = False
