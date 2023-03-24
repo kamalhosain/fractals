@@ -8,4 +8,3 @@ if game_started:
     screens.screen2()
 
 pygame.quit()
-
