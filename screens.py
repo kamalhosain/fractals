@@ -70,7 +70,7 @@ def screen2():
         CHOOSE_ONE.draw(SCREEN)
 
         if MANDELBROT_BUTTON.draw(SCREEN):
-            mandelbrot.draw_mandelbrot(SCREEN, SCREEN_WIDTH, SCREEN_HEIGHT, 100)
+            mandelbrot.draw_mandelbrot(SCREEN, SCREEN_WIDTH, SCREEN_HEIGHT, 50)
         elif SIERPINSKI_BUTTON.draw(SCREEN):
             print("Sierpinski was clicked")
         elif KOCH_BUTTON.draw(SCREEN):
